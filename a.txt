@@ -17,6 +17,7 @@ this is code added by devloper-vijay
 14
 this added by developer mahesh
 
+<<<<<<< HEAD
 15
 16
 17
@@ -25,3 +26,7 @@ this added by developer mahesh
 20
 
 this is added by Anand
+=======
+
+this is final code
+>>>>>>> c72eed3140934c0e9a8d39a1b7585b63956e88c3
