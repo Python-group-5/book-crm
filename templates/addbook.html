@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add-BOOK</title>
+</head>
+<body>
+        <a href="/home">Home</a>
+        <h1> Add A Book</h1>
+        <font color="green">{{massage}}</font>
+        {% for item in emassage %}
+            <font color="red">{{item}}</font><br><br>
+        {% endfor %}
+        <form action="/save-book" method="post">
+
+            Book Id : <input type="text" name="bookid"><br><br>
+            Book Name :<input type="text" name="bookname"><br><br>
+            Book Language :<select name="booklanguage">
+                            <option value="marathi">Marathi</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                            </select><br><br>
+            Book Category :<select name="bookcategory">
+                            <option value="history">History</option>
+                            <option value="geography">Geography</option>
+                            <option value="polity">Polity</option>
+                            <option value="Biography">Biography</option>
+                            <option value="spiritual">Spiritual</option>
+                            <option value="technology"> Technology</option>
+
+                            </select><br><br>
+            Book Writter : <input type="text" name="bookwritter"><br><br>
+            Book Publication :<select name="bookpublication">
+                                <option value="navneet">Navneet</option>
+                                <option value="saket">Saket</option>
+                                <option value="nirali">Nirali</option>
+                                <option value="fadke">Fadke</option>
+
+                                </select><br><br>
+            Book Quantity :<input type="text" name="bookquantity"><br><br>
+            Book Weight :<input type="text"name="bookweight"><br><br>
+            Book Price :<input type="text" name="bookprice"><br><br>
+
+            <input type="submit">
+
+        </form>
+        <a href="/"><font color="red">Logout</font></a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book-List</title>
+</head>
+<body>
+        <h1><font color="orange">Book List</font></h1>
+        <a href="/home">Home</a>
+
+        <table border="1">
+            <thead>
+            <th>Book Id</th><th>Book Name</th><th>Book Language</th><th>Book Category</th>
+            <th>Book Writter</th><th>Book Publication</th><th>Book Quantity</th>
+            <th>Book Weight</th><th>Book Price</th><th>DELETE</th>
+            </thead>
+        {% for item in blist %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.language}}</td>
+            <td>{{item.category}}</td>
+            <td>{{item.writter}}</td>
+            <td>{{item.publication}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.weight}}</td>
+            <td>{{item.price}}</td>
+
+            <td><a href="/delete-book/{{item.id}}">DELETE</a></td>
+        </tr>
+        {% endfor %}
+            </table>
+</body>
+</html>

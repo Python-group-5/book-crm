@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+<body>
+        <h1>Signup</h1>
+        <a href="/">Dashboard</a><br><br>
+
+        <font color="green">{{massage}}</font>
+
+        {% for error in errors %}
+        <font color="red">{{error}}</font><br><br>
+        {% endfor %}
+    <form action="/signup" method="post">
+        User Name : <input type="text" name="user_name"><br><br>
+        Password : <input type="text" name="user_password"><br><br>
+        Email Id : <input type="email" name="user_email"><br><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
