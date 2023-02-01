@@ -3,4 +3,19 @@ s
 s
 d
 
+<<<<<<< HEAD
+15
+16
+17
+18
+19
+20
 
+<<<<<<< HEAD
+=======
+this is added by Anand
+=======
+
+this is final code
+>>>>>>> c72eed3140934c0e9a8d39a1b7585b63956e88c3
+>>>>>>> a56b58a39a5f0f258952d8c43e85f63a5d91784d
